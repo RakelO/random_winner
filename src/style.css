@@ -1,0 +1,65 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+}
+h4{
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+form label{
+    display: inline-block;
+    width: 48%;
+}
+
+form input{
+    width: 50%;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 5px 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table td,
+table th{
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.button-right{
+    float: right;
+}
+
+.border{
+    border: 1px solid grey;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+input.ng-invalid.ng-dirty{
+    border: 1px solid red;
+}
+input.ng-valid.ng-dirty{
+    border: 1px solid green;
+}
+
+.error-message{
+    text-align: right;
+    color: red;
+    font-size: .8em;
+}

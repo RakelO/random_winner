@@ -1,0 +1,22 @@
+{
+  "name": "random_winner",
+  "version": "1.0.0",
+  "description": "Testing for ProgForce",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IevgeniiaSharapaniuk\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D Sharapaniuk",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^2.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.5"
+  }
+}

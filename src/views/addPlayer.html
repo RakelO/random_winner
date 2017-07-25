@@ -1,0 +1,34 @@
+<form ng-submit="addUser.$valid && savePlayer()"  class="border clearfix" name="addUser" novalidate>
+  <h4>Registration form</h4>
+  <fieldset>
+    <label for="first-name">Name</label>
+    <input type="text" name="firstName" id="first-name" ng-model="player.firstName" required>
+    <div ng-messages="addUser.firstName.$error" ng-show="addUser.firstName.$touched" class="error-message">
+      <div ng-message="required">This field is required</div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <label for="last-name">Surname</label>
+    <input type="text" name="lastName" id="last-name" ng-model="player.lastName" required>
+    <div ng-messages="addUser.lastName.$error" ng-show="addUser.lastName.$touched"  class="error-message">
+      <div ng-message="required">This field is required</div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" ng-model="player.email" required>
+    <div ng-messages="addUser.email.$error" ng-show="addUser.email.$invalid && addUser.email.$touched" class="error-message">
+      <div ng-message="required">This field is required</div>
+      <div ng-message="email">Your email address is invalid</div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <label for="telephone">Telephone</label>
+    <input type="tel" id="telephone" ng-model="player.phone" ng-pattern="/\+{0,1}\d{11,15}$/i" maxlength="16">
+  </fieldset>
+  <fieldset>
+    <label for="date-of-birth">Date Of Birth</label>
+    <input type="date" id="date-of-birth" ng-model="player.date">
+  </fieldset>
+  <button type="submit" class="button-right">Save</button>
+</form>
