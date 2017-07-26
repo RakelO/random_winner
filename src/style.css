@@ -2,6 +2,7 @@ body{
     font-family: 'Abel', sans-serif;
     font-size: 16px;
 }
+
 *{
     box-sizing: border-box;
 }
@@ -10,9 +11,25 @@ body{
     width: 600px;
     margin: 0 auto;
 }
+
+.winner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.winner-name{
+    text-transform: capitalize;
+}
+
 h4{
     text-align: center;
     margin: 0 0 20px;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 10px 0;
 }
 
 form label{
@@ -31,11 +48,11 @@ form input{
     padding-left: 5px;
 }
 
-fieldset{
-    border: none;
-    padding: 0;
-    margin: 10px 0;
+.button-wrapper{
+    display: flex;
+    justify-content: space-between;
 }
+
 table{
     width: 100%;
     border-collapse: collapse;
@@ -51,20 +68,10 @@ table td{
     font-size: 0.8em;
 }
 
-.button-right{
-    float: right;
-}
-
 .border{
     border: 1px solid grey;
     padding: 10px;
     margin-bottom: 10px;
-}
-
-.clearfix:after{
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .error-message{

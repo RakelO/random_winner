@@ -1,4 +1,5 @@
 (function () {
+    'use strict';
     angular.module('winners')
         .component('addPlayer', {
             templateUrl: 'views/addPlayer.html',
