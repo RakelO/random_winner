@@ -1,38 +1,54 @@
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
 }
 
 .wrapper{
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
 }
 h4{
     text-align: center;
-    margin: 0 0 10px;
+    margin: 0 0 20px;
 }
 
 form label{
     display: inline-block;
-    width: 48%;
+    width: 49%;
+}
+
+.required-label::after{
+    content: '*';
+    color: #FF452F;
+    margin-left: 5px;
 }
 
 form input{
     width: 50%;
+    padding-left: 5px;
 }
 
 fieldset{
     border: none;
     padding: 0;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 table{
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 table td,
 table th{
     border: 1px solid grey;
-    padding: 5px;
+    padding: 10px;
+}
+
+table td{
+    font-size: 0.8em;
 }
 
 .button-right{
@@ -41,8 +57,8 @@ table th{
 
 .border{
     border: 1px solid grey;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .clearfix:after{
@@ -51,15 +67,14 @@ table th{
     clear: both;
 }
 
-input.ng-invalid.ng-dirty{
-    border: 1px solid red;
-}
-input.ng-valid.ng-dirty{
-    border: 1px solid green;
-}
-
 .error-message{
     text-align: right;
-    color: red;
     font-size: .8em;
+}
+.error{
+    color: #FF452F;
+}
+
+.warning{
+    color: #DD8C18;
 }
